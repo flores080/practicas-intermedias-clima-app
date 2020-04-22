@@ -1,0 +1,40 @@
+.sidenav .collapsible-body > ul:not(.collapsible) > li.active, .sidenav.sidenav-fixed .collapsible-body > ul:not(.collapsible) > li.active {
+    background-color: lightgreen;
+}
+
+.sidenav .collapsible-body > ul:not(.collapsible) > li.active a, .sidenav.sidenav-fixed .collapsible-body > ul:not(.collapsible) > li.active > a {
+    color: black;
+}
+
+ul.sidenav.sidenav-fixed li.active {
+    background-color: darkgreen;
+}
+
+ul.sidenav.sidenav-fixed li.active > a {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.body-back{
+    background-image: url('../img/b7.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    top:0px;
+    left:0px;
+    width: auto;
+    height: auto;
+}
+
+.white-text > input {
+    color: white !important;
+}
+
+.transparent-background{
+    background-color: rgba(255, 255, 255, 0.35);
+    border-radius: 5px;
+    box-shadow: 0px 0px 60px 60px rgba(255, 255, 255, 0.35);
+}
+
