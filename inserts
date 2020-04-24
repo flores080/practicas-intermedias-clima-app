@@ -1,0 +1,60 @@
+CREATE TABLE tipo
+( id INT(11) NOT NULL AUTO_INCREMENT,
+  descripcion VARCHAR(30) NOT NULL,
+  CONSTRAINT tipo_pk PRIMARY KEY (id)
+);
+
+
+
+
+CREATE TABLE prediccion( id INT(11) NOT NULL AUTO_INCREMENT,  tipo INT(11) NOT NULL,  prediccion VARCHAR(100) NOT NULL,   fecha DATETIME NOT NULL,  estado INT(11),  CONSTRAINT prediccion_pk PRIMARY KEY (id),  CONSTRAINT tipo_fk FOREIGN KEY (tipo) REFERENCES tipo(id));
+
+
+
+insert into tipo(id, descripcion) values(1, 'tormenta tropical');
+insert into tipo(id, descripcion) values(2, 'huracanes');
+insert into tipo(id, descripcion) values(3, 'tormentas severas');
+insert into tipo(id, descripcion) values(4, 'tormentas eléctricas');
+insert into tipo(id, descripcion) values(5, 'lluvia y nieve mixtas');
+insert into tipo(id, descripcion) values(6, 'lluvia mixta y aguanieve');
+insert into tipo(id, descripcion) values(7, 'nieve mezclada y aguanieve');
+insert into tipo(id, descripcion) values(8, 'llovizna helada');
+insert into tipo(id, descripcion) values(9, 'llovizna');
+insert into tipo(id, descripcion) values(10, 'lluvia helada');
+insert into tipo(id, descripcion) values(11, 'duchas');
+insert into tipo(id, descripcion) values(12, 'lluvia');
+insert into tipo(id, descripcion) values(13, 'ráfagas de nieve');
+insert into tipo(id, descripcion) values(14, 'chubascos de nieve');
+insert into tipo(id, descripcion) values(15, 'nieve que sopla');
+insert into tipo(id, descripcion) values(16, 'nieve');
+insert into tipo(id, descripcion) values(17, 'granizo');
+insert into tipo(id, descripcion) values(18, 'aguanieve');
+insert into tipo(id, descripcion) values(19, 'polvo');
+insert into tipo(id, descripcion) values(20, 'de niebla');
+insert into tipo(id, descripcion) values(21, 'bruma');
+insert into tipo(id, descripcion) values(22, 'ahumado');
+insert into tipo(id, descripcion) values(23, 'ventoso');
+insert into tipo(id, descripcion) values(24, 'ventoso');
+insert into tipo(id, descripcion) values(25, 'frío');
+insert into tipo(id, descripcion) values(26, 'nublado');
+insert into tipo(id, descripcion) values(27, 'mayormente nublado (noche)');
+insert into tipo(id, descripcion) values(28, 'mayormente nublado (día)');
+insert into tipo(id, descripcion) values(29, 'parcialmente nublado (noche)');
+insert into tipo(id, descripcion) values(30, 'parcialmente nublado (día)');
+insert into tipo(id, descripcion) values(31, 'despejado (noche)');
+insert into tipo(id, descripcion) values(32, 'soleado');
+insert into tipo(id, descripcion) values(33, 'feria (noche)');
+insert into tipo(id, descripcion) values(34, 'feria (día)');
+insert into tipo(id, descripcion) values(35, 'lluvia y granizo mezclados');
+insert into tipo(id, descripcion) values(36, 'caliente');
+insert into tipo(id, descripcion) values(37, 'tormentas eléctricas aisladas');
+insert into tipo(id, descripcion) values(38, 'tormentas eléctricas dispersas');
+insert into tipo(id, descripcion) values(39, 'chubascos dispersos (día)');
+insert into tipo(id, descripcion) values(40, 'fuertes lluvias');
+insert into tipo(id, descripcion) values(41, 'chubascos de nieve dispersos (día)');
+insert into tipo(id, descripcion) values(42, 'fuertes nevadas');
+insert into tipo(id, descripcion) values(43, 'tormenta de nieve');
+insert into tipo(id, descripcion) values(44, 'no disponible');
+insert into tipo(id, descripcion) values(45, 'chubascos dispersos (noche)');
+insert into tipo(id, descripcion) values(46, 'chubascos de nieve dispersos (noche)');
+insert into tipo(id, descripcion) values(47, 'chubascos dispersos');
